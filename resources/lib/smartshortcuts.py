@@ -217,7 +217,7 @@ class SmartShortCuts():
                                 xmldata = xmltree.fromstring(contents_data)
                                 media_type = "unknown"
                                 label = item["label"]
-                                for line in xmldata.getiterator():
+                                for line in xmldata.iter():
                                     if line.tag == "smartplaylist":
                                         media_type = line.attrib['type']
                                     if line.tag == "name":
